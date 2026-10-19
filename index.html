@@ -1,47 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 Layout Design</title>
+    <title>Facebook Simplified UI</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <h1>Header Title</h1>
-        </header>
-
-        <!-- Navigation Bar -->
-        <nav>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Tin tức</a></li>
-                <li><a href="#">Sản phẩm</a></li>
-                <li><a href="#">Liên hệ</a></li>
-            </ul>
-        </nav>
-
-        <!-- Main Content Area -->
-        <div class="content">
-            <article>
-                <h2>Bài viết chính (Article)</h2>
-                <p>Đây là khu vực nội dung chính của trang web. Sử dụng thẻ <code>&lt;article&gt;</code> giúp trình duyệt và công cụ tìm kiếm hiểu rõ đây là nội dung độc lập, quan trọng nhất của trang.</p>
-                <p>Nội dung có thể bao gồm bài viết tin tức, bài đăng blog, hoặc thông tin chi tiết sản phẩm.</p>
-            </article>
-
-            <aside>
-                <h3>Thanh bên (Aside)</h3>
-                <p>Khu vực <code>&lt;aside&gt;</code> chứa các thông tin phụ như danh mục, quảng cáo, liên kết nổi bật hoặc bài viết liên quan.</p>
-            </aside>
+    <!-- 1. FIXED HEADER -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">f</div>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Tìm kiếm trên Facebook">
+            </div>
         </div>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2026 CodeGym. All rights reserved.</p>
-        </footer>
+        <nav class="header-center">
+            <a href="#" class="nav-btn active"><i class="fas fa-home"></i></a>
+            <a href="#" class="nav-btn"><i class="fas fa-user-friends"></i></a>
+            <a href="#" class="nav-btn"><i class="fas fa-tv"></i></a>
+            <a href="#" class="nav-btn"><i class="fas fa-store"></i></a>
+            <a href="#" class="nav-btn"><i class="fas fa-users"></i></a>
+        </nav>
+
+        <div class="header-right">
+            <div class="icon-btn"><i class="fas fa-th"></i></div>
+            <div class="icon-btn"><i class="fab fa-facebook-messenger"></i></div>
+            <div class="icon-btn"><i class="fas fa-bell"></i></div>
+            <div class="profile-avatar"></div>
+        </div>
+    </header>
+
+    <!-- 2. MAIN CONTAINER -->
+    <div class="main-container">
+        
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <div class="avatar-sm"></div>
+                    <span>Nguyễn Văn A</span>
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-user-friends icon-blue"></i>
+                    <span>Bạn bè</span>
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-history icon-blue"></i>
+                    <span>Kỷ niệm</span>
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-bookmark icon-purple"></i>
+                    <span>Đã lưu</span>
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-users icon-blue"></i>
+                    <span>Nhóm</span>
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-store icon-blue"></i>
+                    <span>Marketplace</span>
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-tv icon-blue"></i>
+                    <span>Xem video</span>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- MAIN FEED CONTENT -->
+        <main class="feed-content">
+            
+            <!-- Create Post Box -->
+            <div class="card create-post">
+                <div class="post-top">
+                    <div class="avatar-sm"></div>
+                    <input type="text" placeholder="A ơi, bạn đang nghĩ gì thế?">
+                </div>
+                <hr>
+                <div class="post-bottom">
+                    <button class="post-action-btn"><i class="fas fa-video color-red"></i> Video trực tiếp</button>
+                    <button class="post-action-btn"><i class="fas fa-images color-green"></i> Ảnh/video</button>
+                    <button class="post-action-btn"><i class="fas fa-laugh color-yellow"></i> Cảm xúc/hoạt động</button>
+                </div>
+            </div>
+
+            <!-- Feed Post 1 -->
+            <div class="card post">
+                <div class="post-header">
+                    <div class="avatar-sm"></div>
+                    <div class="post-info">
+                        <h4>CodeGym Vietnam</h4>
+                        <span>2 giờ trước · <i class="fas fa-globe-asia"></i></span>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>Chào mừng bạn đến với bài thực hành tạo giao diện trang chủ Facebook giản lược! Chúc bạn hoàn thành bài tập xuất sắc.</p>
+                </div>
+                <hr>
+                <div class="post-actions">
+                    <button><i class="far fa-thumbs-up"></i> Thích</button>
+                    <button><i class="far fa-comment"></i> Bình luận</button>
+                    <button><i class="fas fa-share"></i> Chia sẻ</button>
+                </div>
+            </div>
+
+            <!-- Feed Post 2 -->
+            <div class="card post">
+                <div class="post-header">
+                    <div class="avatar-sm"></div>
+                    <div class="post-info">
+                        <h4>Lập Trình Viên Web</h4>
+                        <span>5 giờ trước · <i class="fas fa-globe-asia"></i></span>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>Thiết kế bố cục trang web bằng HTML5 & CSS Flexbox giúp giao diện hiển thị mượt mà và linh hoạt trên nhiều kích thước màn hình!</p>
+                </div>
+                <hr>
+                <div class="post-actions">
+                    <button><i class="far fa-thumbs-up"></i> Thích</button>
+                    <button><i class="far fa-comment"></i> Bình luận</button>
+                    <button><i class="fas fa-share"></i> Chia sẻ</button>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-sidebar">
+            <h3 class="sidebar-title">Người liên hệ</h3>
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <div class="avatar-container">
+                        <div class="avatar-sm"></div>
+                        <span class="online-status"></span>
+                    </div>
+                    <span>Trần Văn B</span>
+                </li>
+                <li class="contact-item">
+                    <div class="avatar-container">
+                        <div class="avatar-sm"></div>
+                        <span class="online-status"></span>
+                    </div>
+                    <span>Lê Thị C</span>
+                </li>
+                <li class="contact-item">
+                    <div class="avatar-container">
+                        <div class="avatar-sm"></div>
+                        <span class="online-status"></span>
+                    </div>
+                    <span>Phạm Văn D</span>
+                </li>
+            </ul>
+        </aside>
+
     </div>
 
 </body>
