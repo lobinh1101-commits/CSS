@@ -3,33 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tạo Menu Ngang</title>
+    <title>HTML5 Layout Design</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="menu">
-        <ul>
-            <li><a href="#">Sem 1</a>
-                <ul>
-                    <li><a href="#">Computing Fundametal</a></li>
-                    <li><a href="#">C Programming</a></li>
-                    <li><a href="#">Building Dynamic Website</a></li>
-                    <li><a href="#">MS Transact-SQL</a></li>
-                    <li><a href="#">Project</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Sem 2 </a>
-                <ul>
-                    <li><a href="#">Cloud Computing</a></li>
-                    <li><a href="#">APJ - I</a></li>
-                    <li><a href="#">APJ - II</a></li>
-                    <li><a href="#">APJ - III</a></li>
-                    <li><a href="#">eProject</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Sem 3</a></li>
-            <li><a href="#">Sem 4</a></li>
-        </ul>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Header Title</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <article>
+                <h2>Bài viết chính (Article)</h2>
+                <p>Đây là khu vực nội dung chính của trang web. Sử dụng thẻ <code>&lt;article&gt;</code> giúp trình duyệt và công cụ tìm kiếm hiểu rõ đây là nội dung độc lập, quan trọng nhất của trang.</p>
+                <p>Nội dung có thể bao gồm bài viết tin tức, bài đăng blog, hoặc thông tin chi tiết sản phẩm.</p>
+            </article>
+
+            <aside>
+                <h3>Thanh bên (Aside)</h3>
+                <p>Khu vực <code>&lt;aside&gt;</code> chứa các thông tin phụ như danh mục, quảng cáo, liên kết nổi bật hoặc bài viết liên quan.</p>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 CodeGym. All rights reserved.</p>
+        </footer>
     </div>
+
 </body>
 </html>
