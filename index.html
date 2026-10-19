@@ -3,35 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sử dụng các thuộc tính CSS cơ bản</title>
-    <style>
-        h1 {
-            color: blue;
-            font-family: Tahoma, sans-serif;
-            font-size: 200%;
-        }
-
-        p {
-            color: red;
-            font-family: Arial, sans-serif;
-            font-size: 120%;
-            border: 1px solid grey;
-            padding: 10px;
-        }
-
-        #element1 {
-            color: blue;
-        }
-    </style>
+    <title>Tạo Menu Ngang</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h1>Đây là đề mục</h1>
-
-    <p>Đây là đoạn văn bản 1.</p>
-    <p>Đây là đoạn văn bản 2.</p>
-    <p>Đây là đoạn văn bản 3.</p>
-    <p id="element1">Đoạn văn bản có thuộc tính ID (màu xanh dương)</p>
-
+    <div id="menu">
+        <ul>
+            <li><a href="#">Sem 1</a>
+                <ul>
+                    <li><a href="#">Computing Fundametal</a></li>
+                    <li><a href="#">C Programming</a></li>
+                    <li><a href="#">Building Dynamic Website</a></li>
+                    <li><a href="#">MS Transact-SQL</a></li>
+                    <li><a href="#">Project</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sem 2 </a>
+                <ul>
+                    <li><a href="#">Cloud Computing</a></li>
+                    <li><a href="#">APJ - I</a></li>
+                    <li><a href="#">APJ - II</a></li>
+                    <li><a href="#">APJ - III</a></li>
+                    <li><a href="#">eProject</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sem 3</a></li>
+            <li><a href="#">Sem 4</a></li>
+        </ul>
+    </div>
 </body>
 </html>
